@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  
+  <div class="quote">"Your cravings are one step away from satisfaction"</div>
+
+  <div class="cart-container">
+    <div id="cart-list">
+     
+    </div>
+
+    <div class="total" id="total-price">Total: ₹0</div>
+  </div>
+  <div class="address-form">
+    <h2>Your Details</h2>
+   <label for="name">Name :-</label>
+      <input class="add-lebel" type="name" id="name" name="name" required placeholder="Your Full Name">
+      <label for="name">Phone No :-</label>
+      <input class="add-lebel" type="number" id="phone-number" name="ph-no" required placeholder="Phone Number">
+      <label class="add-lebel" for="address">Your Address :-</label>
+      <textarea id="address" name="address" rows="2" required placeholder="Your Address"></textarea>
+    </div>
+  </div>
+  </div>
+
+  <div id="pay-and-order">
+    <h3>Select Payment Method :- </h3>
+    <label>
+      <input  type="radio" name="payment" value="cod" checked>
+      Cash on Delivery
+    </label>
+    <label>
+      <input type="radio" name="payment" value="upi">
+      By UPI
+    </label>
+  </div>
+
+  <button id="order">Order Now</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

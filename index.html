@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Burger Ritual</title>
+    <link rel="icon" href="hero-img.jpg" type="image/jpg">
+
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+  <div id="navbar">
+    <div id="logo">The Burger Ritual</div>
+    <ul>
+      <li><a href="#menu-section">Menu</a></li>
+      <li><a href="#About-Us">About Us</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li class="no-hover"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3"><path d="M480.21-480Q510-480 531-501.21t21-51Q552-582 530.79-603t-51-21Q450-624 429-602.79t-21 51Q408-522 429.21-501t51 21ZM480-191q119-107 179.5-197T720-549q0-105-68.5-174T480-792q-103 0-171.5 69T240-549q0 71 60.5 161T480-191Zm0 95Q323.03-227.11 245.51-339.55 168-452 168-549q0-134 89-224.5T479.5-864q133.5 0 223 90.5T792-549q0 97-77 209T480-96Zm0-456Z"/></svg> <select id="city" name="city">
+    <option value="pune">Pune</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="delhi">Delhi</option>
+    <option value="bangalore">Bangalore</option>
+    <option value="hyderabad">Hyderabad</option>
+  </select></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section  -->
+ <div id="hero-page">
+  <div class="hero-left">
+    <h1> The Burger Ritual</h1>
+    <p style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 1.5rem;">Makes eating burgers feel like a sacred experience.</p>
+    <p>Come hungry.<br/> Leave transformed.</p>
+    <div class="hero-buttons">
+      <button id="Order" style="color: inherit;  text-decoration: none;font: inherit; "><a href="cart.html">Order Now</a></button>
+      <button onclick="alert(`Not Available ! This option is temporarily unavailable.`)">Book Dineout</button>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="hero-img.jpg" alt="Burger Image">
+  </div>
+</div>
+<!-- The End OF  HERO PAGE -->
+ 
+<!-- Menu Page -->
+<section id="menu-section">
+ <h2 class="menu-h2">Menu</h2>
+<div class="menu-scroll-wrapper">
+  
+  <button class="scroll-btn left" onclick="scrollMenu(-1)">&#10094;</button>
+
+  <div class="scroll-viewport">
+    <div class="menu-container" id="scrollable-menu">
+      <!-- Your 7 menu items -->
+      <!-- Menu Items -->
+<div class="menu-item">
+  <img src="cheese_burger.jpg" alt="Classic Cheese Burst">
+  <h3>Classic Cheese Burst</h3>
+  <p>Overflowing with melty cheddar</p>
+  <p class="price">₹169</p>
+  <button class="add-to-cart" data-name="Classic Cheese Burst" data-price="169" data-img="cheese_burger.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="Smoky BBQ Bliss.jpg" alt="Smoky BBQ Bliss">
+  <h3>Smoky BBQ Bliss</h3>
+  <p>Grilled to perfection with BBQ sauce</p>
+  <p class="price">₹189</p>
+  <button class="add-to-cart" data-name="Smoky BBQ Bliss" data-price="189" data-img="Smoky BBQ Bliss.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="SpicyInferno.jpg" alt="Spicy Inferno">
+  <h3>Spicy Inferno</h3>
+  <p>Hot & spicy with jalapeños and chili mayo</p>
+  <p class="price">₹179</p>
+  <button class="add-to-cart" data-name="Spicy Inferno" data-price="179" data-img="SpicyInferno.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="CheesyVolcano.jpg" alt="Cheesy Volcano">
+  <h3>Cheesy Volcano</h3>
+  <p>Loaded with gooey cheese inside and out</p>
+  <p class="price">₹189</p>
+  <button class="add-to-cart" data-name="Cheesy Volcano" data-price="189" data-img="CheesyVolcano.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="Maharaja_Mac.jpg" alt="Veggie Delight">
+  <h3>Veggie Delight</h3>
+  <p>Fresh & crunchy with classic sauce</p>
+  <p class="price">₹149</p>
+  <button class="add-to-cart" data-name="Veggie Delight" data-price="149" data-img="Maharaja_Mac.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="Double_Trouble.jpg" alt="Triple Threat">
+  <h3>Triple Threat</h3>
+  <p>Three patties, extra cheese</p>
+  <p class="price">₹229</p>
+  <button class="add-to-cart" data-name="Triple Threat" data-price="229" data-img="Double_Trouble.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="PaneerRoyale.jpg" alt="Paneer Magic">
+  <h3>Paneer Magic</h3>
+  <p>Indian-style masala paneer burger</p>
+  <p class="price">₹179</p>
+  <button class="add-to-cart" data-name="Paneer Magic" data-price="179" data-img="PaneerRoyale.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="AlooKing.jpg" alt="Aloo King">
+  <h3>Aloo King</h3>
+  <p>Crispy aloo tikki with mint chutney</p>
+  <p class="price">₹129</p>
+  <button class="add-to-cart" data-name="Aloo King" data-price="129" data-img="AlooKing.jpg">Add to Cart</button>
+</div>
+
+  </div>
+
+  <button class="scroll-btn right" onclick="scrollMenu(1)">&#10095;</button>
+</div>
+
+    <!-- Only 3 items in a row -->
+
+      
+  </div>
+  <!-- n -->
+   <h2 class="menu-h2">Best Selling</h2>
+  <div id="menu-container-best-selling">
+     <!-- Only 3 items in a row -->
+   <div class="menu-item">
+  <img src="chicken_loaded.jpg" alt="Chicken Loaded">
+  <h3>Chicken Loaded</h3>
+  <p>Loaded with Chicken cheese inside and out</p>
+  <p class="price">₹289</p>
+  <button class="add-to-cart" data-name="Chicken Loaded" data-price="289" data-img="chicken_loaded.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="Combo_pack.jpg" alt="Delicious Combo Meal">
+  <h3>Delicious Combo Meal</h3>
+  <p>a gourmet burger, pizza, and french fries</p>
+  <p class="price">₹289</p>
+  <button class="add-to-cart" data-name="Delicious Combo Meal" data-price="289" data-img="Combo_pack.jpg">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+  <img src="coca_combo.jpg" alt="Delicious combo meal box">
+  <h3>Delicious combo meal box</h3>
+  <p>featuring burger, fries, pizza, and dipping sauce</p>
+  <p class="price">₹289</p>
+  <button class="add-to-cart" data-name="Delicious combo meal box" data-price="289" data-img="coca_combo.jpg">Add to Cart</button>
+</div>
+
+    </section>
+<!-- About us  -->
+<About id="About-Us">
+  <div id="about-us">
+  <div class="about-wrapper">
+    <div class="about-video">
+      <video loop autoplay muted src="HampBurger.mp4"></video>
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Burger Bliss – where every bite is a burst of flavor! We're passionate about crafting mouthwatering burgers using the freshest ingredients, juicy patties, and secret sauces that keep our customers coming back for more. Whether you're craving a cheesy delight or a fiery feast, we serve happiness in every bun. Taste the love. Taste the difference.
+      </p>
+    </div>
+  </div>
+</div>
+</About>
+<!-- Contact me -->
+ <section id="contact">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="your@email.com">
+    </div>
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+    </div>
+    <button onclick="alert(`Your Message Was Sent , We Will Connect With You Soon`)" type="submit">Send Message</button>
+  </form>
+</section>
+<!-- Footer  -->
+<footer id="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 The Burger Ritual. All Rights Reserved.</p>
+
+    <ul class="footer-links">
+      <li><a href="#menu-section">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+
+    <p class="project-note">
+  This website is a personal project created as part of my learning journey in web development. It showcases my skills in HTML, CSS, and JavaScript through a custom-designed restaurant interface. I’m passionate about building creative and functional web experiences.  
+  <br><br>
+  These are my social links — feel free to connect with me:  
+  <a href="https://www.linkedin.com/in/prashant-kalpure-ba71a02aa" target="_blank">LinkedIn</a> |
+  <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
+  <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+</p>
+
+  </div>
+</footer>
+
+<!-- javaScript -->
+ <script src="script.js"></script>
+</body>
+</html>
