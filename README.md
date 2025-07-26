@@ -75,11 +75,6 @@ It’s also built to look **professional, simple**, and **aesthetically appealin
 
 ---
 
-## 📸 Screenshots
-
-> (Add screenshots here after deployment)
-
----
 
 ## 🛠️ Future Enhancements
 
