@@ -134,3 +134,25 @@ function updateQuantity(index, change) {
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
 }
+document.getElementById("order").addEventListener("click", () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+      alert("Your cart is empty!");
+      return;
+    }
+
+    const selectedPayment = document.querySelector('input[name="payment"]:checked');
+    if (!selectedPayment) {
+      alert("Please select a payment method.");
+      return;
+    }
+
+    alert("Order is ordered. Deliver soon! 🚚🍔");
+
+    // Clear the cart
+    localStorage.removeItem("cart");
+
+    // Reload the page to reflect empty cart
+    location.reload();
+  });
