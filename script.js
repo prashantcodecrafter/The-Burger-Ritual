@@ -148,7 +148,7 @@ document.getElementById("order").addEventListener("click", () => {
       return;
     }
 
-    alert("Order is ordered. Deliver soon! 🚚🍔");
+    alert("Order is placed . Deliver soon! 🚚🍔");
 
     // Clear the cart
     localStorage.removeItem("cart");
